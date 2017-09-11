@@ -15,5 +15,3 @@ class Downloadfile
     end
 end
 
-@download=Downloadfile.new
-@download.downloadfile

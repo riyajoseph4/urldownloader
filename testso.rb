@@ -1,11 +1,11 @@
 require 'minitest/autorun'
 require './sort'
-
+require './unzip'
 
 class SortTest< Minitest::Test
 	def setup
 	 @sort=SortContents.new
-     @sort.mergesort($ar)
+     @sort.mergesort(['v','d'])
      @sort.writeFile
     end 
 

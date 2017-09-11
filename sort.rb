@@ -3,8 +3,6 @@ require 'rubygems'
 require 'zip'
 require 'net/http'
 require'./unzip'
-require './sort'
-
 
 
 class SortContents
@@ -33,6 +31,4 @@ class SortContents
         File.open("temp","w") {|file| file.puts(@y)}
     end
 end
-@sort=SortContents.new
-@sort.mergesort($ar)
-@sort.writeFile
+
